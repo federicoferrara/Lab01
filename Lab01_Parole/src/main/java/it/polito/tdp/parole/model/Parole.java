@@ -38,5 +38,12 @@ public class Parole {
 	public void reset() {
 		this.parole.clear();
 	}
+	
+	public void cancella(String parola) {
+		for(String s: this.parole) {
+			if(s.equals(parola))
+				this.parole.remove(s);
+		}
+	}
 
 }
